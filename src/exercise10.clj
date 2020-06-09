@@ -1,15 +1,14 @@
 (ns exercise10)
 
 (defn open-account []
-    (let [account {:balance 0}]   
-    account)
+    {:balance 0}
 )
 (defn close-account [account]
   (dissoc account :balance)
 )
 
 (defn get-balance [account]
-  (get account :balance)
+  (account :balance)
 )
 
 (defn update-balance [account amount]
